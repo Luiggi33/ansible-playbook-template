@@ -1,0 +1,5 @@
+---
+- name: "This is a template role"
+  ansible.builtin.debug:
+    msg: "Hello from the template role"
+...

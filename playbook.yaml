@@ -1,13 +1,13 @@
 ---
 - name: Template Playbook
   hosts: servers
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
   tasks:
     - name: First step
       ansible.builtin.ping:
-    
+
     - name: Second step
       ansible.builtin.include_role:
-        name: template-role
+        name: template_role
 ...
